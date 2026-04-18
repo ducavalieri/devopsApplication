@@ -1,0 +1,13 @@
+name: Application Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: starting progress
+        run: echo "✅ Starting application workflow..."
